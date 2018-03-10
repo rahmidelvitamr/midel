@@ -1,0 +1,41 @@
+@font-face {
+    font-family: 'fira_sans_compressedregular';
+    src: url('fonts/firasanscompressed-regular-webfont.eot');
+    src: url('fonts/firasanscompressed-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/firasanscompressed-regular-webfont.woff2') format('woff2'),
+         url('fonts/firasanscompressed-regular-webfont.woff') format('woff'),
+         url('fonts/firasanscompressed-regular-webfont.ttf') format('truetype'),
+         url('fonts/firasanscompressed-regular-webfont.svg#fira_sans_compressedregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{	
+	font-family: 'fira_sans_compressedregular';
+}
+
+a{
+	color: #578f9b;
+}
+
+a:hover{
+	text-decoration: none;
+	color: #3C74A3;
+}
+
+.bg-midel-blue{
+	background-color: #A2CEE1;
+}
+
+.bg-midel-peach{
+	background-color: #F2E9DA;
+}
+
+.bg-midel-blue-peach{
+	background-image: linear-gradient(to left top, #a2cee1, #acd8d8, #c3dfd0, #dde4d0, #f2e9da);
+}
+
+
+.lh-3{
+	line-height: 3rem;
+}
