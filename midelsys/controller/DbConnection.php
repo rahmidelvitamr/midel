@@ -1,23 +1,39 @@
 <?php
+namespace controller;
 
 class DbConnection
 {
 
+    private $host, $port, $user, $password, $schema, $provider;
+
     protected $con;
 
-    public function DbConnection($host, $port, $user, $password, $schema, $provider)
+    public function __construct($provider)
     {
-        switch (strtolower($provider)) {
+        $this->provider = strtolower($provider);
+        switch ($this->provider) {
             case 'mysql':
-                $this->con = mysqli_connect($host, $user, $password, $schema, $port);
+                $this->host = 'localhost';
+                $this->port = '3306';
+                $this->user = 'mysql';
+                $this->password = 'mysql';
+                $this->schema = 'midelsys';
+                $this->con = mysqli_connect( $this->host, $this->user, $this->password, $this->schema, $this->port);
                 break;
             default:
                 $this->con = null;
                 break;
         }
     }
-    
-    protected function executeQuery($sql){
-        return mysqli_query($this->con, $sql);
+
+    protected function executeQuery($sql)
+    {
+        switch ($this->provider) {
+            case 'mysql':
+                $result = mysqli_query($this->con, $sql);
+                mysqli_close($this->con);
+                return $result;
+                break;
+        }
     }
 }
