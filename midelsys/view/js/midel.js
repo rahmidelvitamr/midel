@@ -25,3 +25,10 @@ function menu(){
 function menuSwitcher(menu){
 	$('#view').load('view/'+menu+'.php');
 }
+
+function showFormSupplier(){
+	$('#modal_content').load('view/supplier/createSupplier.php',function(){
+        $('#modalForm').modal({show:true});
+	
+});
+}

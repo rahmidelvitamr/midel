@@ -18,9 +18,9 @@
     		<div class="mr-2">Hi, User</div>
 	</nav>
 	<div class="row h-100">
-		<div class="col-2 bg-midel-blue-peach">
-			<nav class="navbar navbar-expand mt-5">
-				<div class="collapse navbar-collapse">
+		<div class="col-2 bg-midel-blue-peach ">
+			<nav class="navbar navbar-expand mt-5 fixed-top">
+				<div class="collapse navbar-collapse " >
 					<ul class="navbar-nav w-100 d-flex flex-column h5 lh-3">
 						<li class="nav-item">
 							<a href="#"><i class="fas fa-tachometer-alt"></i><span class="ml-2">Dashboard</span></a>
