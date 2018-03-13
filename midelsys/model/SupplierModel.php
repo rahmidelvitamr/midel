@@ -14,9 +14,14 @@ class SupplierModel extends DbConnection{
     }
     
     public function getSupplierBySupplierCode($supllierCode){
+<<<<<<< HEAD
         $this->sql = "SELECT * FROM midelsys.M_SUPPLIER WHERE SUPPLIER_CODE = '"+$supllierCode+"'";
+=======
+        $this->sql = "SELECT * FROM M_SUPPLIER WHERE SUPPLIER_CODE = '"+$supllierCode+"'";
+>>>>>>> branch 'master' of https://github.com/rahmidelvitamr/midel.git
         
         return $this->executeQuery($this->sql);      
+<<<<<<< HEAD
     }
     
     public function insertDataSupplier(){
@@ -24,5 +29,7 @@ class SupplierModel extends DbConnection{
         
         return $this->executeQuery($this->sql);
 
+=======
+>>>>>>> branch 'master' of https://github.com/rahmidelvitamr/midel.git
     }
 }

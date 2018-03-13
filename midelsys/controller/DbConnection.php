@@ -19,6 +19,24 @@ class DbConnection
                 $this->password = '123456';
                 $this->schema = 'midelsys';
                 $this->con = mysqli_connect( $this->host, $this->user, $this->password, $this->schema, $this->port);
+                $this->host = 'localhost';
+                $this->port = '3306';
+                $this->user = 'mysql';
+                $this->password = 'mysql';
+                $this->schema = 'midelsys';
+                $this->con = mysqli_connect( $this->host, $this->user, $this->password, $this->schema, $this->port);
+                $this->host = 'localhost';
+                $this->port = '3306';
+                $this->user = 'mysql';
+                $this->password = 'mysql';
+                $this->schema = 'midelsys';
+                $this->con = mysqli_connect( $this->host, $this->user, $this->password, $this->schema, $this->port);
+                $this->host = 'localhost';
+                $this->port = '3306';
+                $this->user = 'mysql';
+                $this->password = 'mysql';
+                $this->schema = 'midelsys';
+                $this->con = mysqli_connect( $this->host, $this->user, $this->password, $this->schema, $this->port);
                 break;
             default:
                 $this->con = null;
